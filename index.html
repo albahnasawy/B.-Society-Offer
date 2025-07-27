@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Food Safety Course Offer - B. Society</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Custom styles for elements not easily covered by Tailwind or for specific overrides */
+        .monthly-breakdown table {
+            border-collapse: collapse;
+        }
+        .monthly-breakdown th, .monthly-breakdown td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .monthly-breakdown th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+        .monthly-breakdown tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 0.375rem; /* rounded-md */
+            padding: 0.5rem 0;
+            position: absolute;
+            z-index: 10;
+            bottom: 125%; /* Position the tooltip above the text */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%; /* At the bottom of the tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        /* Animation for canvas output */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="p-5 md:p-10">
+
+    <div class="container max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-lg shadow-lg">
+
+        <!-- Logos Section -->
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
+            <!-- Your Logo -->
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/120x80/007bff/ffffff?text=Your+Logo"
+                     onerror="this.onerror=null;this.src='https://placehold.co/120x80/cccccc/333333?text=Logo+Error';"
+                     alt="Your Company Logo"
+                     class="w-24 h-auto sm:w-32 rounded-md shadow-md">
+                <p class="text-sm text-gray-600 mt-2">Your Company</p>
+            </div>
+
+            <!-- Client Logo -->
+            <div class="flex flex-col items-center">
+                <img src="https://placehold.co/120x80/28a745/ffffff?text=Client+Logo"
+                     onerror="this.onerror=null;this.src='https://placehold.co/120x80/cccccc/333333?text=Logo+Error';"
+                     alt="Client Company Logo"
+                     class="w-24 h-auto sm:w-32 rounded-md shadow-md">
+                <p class="text-sm text-gray-600 mt-2">Client Company</p>
+            </div>
+        </div>
+
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6">Basic Food Safety Course Offer - B. Society</h1>
+        <p class="text-lg text-gray-700 mb-8">This document outlines the offer for a <strong class="text-blue-600">Basic Food Safety Course</strong> provided by "B. Society," designed to enhance food safety knowledge and practices across multiple branches.</p>
+
+        <!-- Course Overview Section -->
+        <div class="course-overview mb-8 p-6 border border-gray-200 rounded-lg bg-gray-50 shadow-sm">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Course Overview</h2>
+            <ul class="list-none pl-0 space-y-3">
+                <li><strong class="text-gray-800">Course Title:</strong> Basic Food Safety Course</li>
+                <li><strong class="text-gray-800">Duration:</strong> 12 hours, spread across 3 sessions over three months.</li>
+                <li><strong class="text-gray-800">Locations:</strong> Training will be conducted across three branches:
+                    <ul class="list-disc list-inside ml-4 mt-2 text-gray-600">
+                        <li>Mansoura 1</li>
+                        <li>Mansoura 2</li>
+                        <li>Tanta</li>
+                    </ul>
+                </li>
+                <li><strong class="text-gray-800">Target Audience:</strong> Senior Management and Junior's Team at each branch.</li>
+                <li><strong class="text-gray-800">Training Format:</strong> On-site training, 1 day per branch per session.</li>
+            </ul>
+        </div>
+
+        <!-- Monthly Breakdown Section -->
+        <div class="monthly-breakdown mb-8 p-6 border border-gray-200 rounded-lg bg-gray-50 shadow-sm">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Monthly Breakdown and Cost</h2>
+            <p class="text-gray-700 mb-6">The training is structured into three monthly sessions, with each month covering one session for each branch.</p>
+
+            <!-- Month 1 -->
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Month 1</h3>
+            <table class="w-full mb-8 rounded-md overflow-hidden shadow-sm">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-800">
+                        <th class="py-3 px-4">Detail</th>
+                        <th class="py-3 px-4">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4">Sessions</td>
+                        <td class="py-2 px-4">1 session per branch (3 sessions total)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Duration</td>
+                        <td class="py-2 px-4">1 day per branch</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Participants</td>
+                        <td class="py-2 px-4">Senior Management and Junior's Team</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Total Training Days</td>
+                        <td class="py-2 px-4">3 days (1 day for Mansoura 1, 1 day for Mansoura 2, 1 day for Tanta)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Cost for Month 1</td>
+                        <td class="py-2 px-4">6000 EGP</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Month 2 -->
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Month 2</h3>
+            <table class="w-full mb-8 rounded-md overflow-hidden shadow-sm">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-800">
+                        <th class="py-3 px-4">Detail</th>
+                        <th class="py-3 px-4">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4">Sessions</td>
+                        <td class="py-2 px-4">1 session per branch (3 sessions total)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Duration</td>
+                        <td class="py-2 px-4">1 day per branch</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Participants</td>
+                        <td class="py-2 px-4">Senior Management and Junior's Team</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Total Training Days</td>
+                        <td class="py-2 px-4">3 days (1 day for Mansoura 1, 1 day for Mansoura 2, 1 day for Tanta)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Cost for Month 2</td>
+                        <td class="py-2 px-4">6000 EGP</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Month 3 -->
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Month 3</h3>
+            <table class="w-full mb-8 rounded-md overflow-hidden shadow-sm">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-800">
+                        <th class="py-3 px-4">Detail</th>
+                        <th class="py-3 px-4">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4">Sessions</td>
+                        <td class="py-2 px-4">1 session per branch (3 sessions total)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Duration</td>
+                        <td class="py-2 px-4">1 day per branch</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Participants</td>
+                        <td class="py-2 px-4">Senior Management and Junior's Team</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Total Training Days</td>
+                        <td class="py-2 px-4">3 days (1 day for Mansoura 1, 1 day for Mansoura 2, 1 day for Tanta)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4">Cost for Month 3</td>
+                        <td class="py-2 px-4">6000 EGP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Total Course Summary Section -->
+        <div class="total-summary mb-8 p-6 border border-gray-200 rounded-lg bg-gray-50 shadow-sm">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Total Course Summary</h2>
+            <ul class="list-none pl-0 space-y-3">
+                <li><strong class="text-gray-800">Total Duration:</strong> 3 months</li>
+                <li><strong class="text-gray-800">Total Sessions:</strong> 9 sessions (3 sessions per branch)</li>
+                <li><strong class="text-gray-800">Total Training Days:</strong> 9 days (3 days per month across all branches)</li>
+                <li><strong class="text-gray-800">Total Estimated Cost:</strong> 18,000 EGP (6000 EGP/month * 3 months)</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Canvas Section -->
+        <div class="interactive-canvas mt-8 p-6 border border-dashed border-gray-400 rounded-lg bg-blue-50 text-center">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-4">Interactive Course Details</h2>
+            <p class="text-gray-700 mb-6">Click on a month or the total to see a summary of the training details and cost.</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-6">
+                <button onclick="displayMonth('Month 1', 6000, 3, 'Mansoura 1, Mansoura 2, Tanta')"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Month 1
+                </button>
+                <button onclick="displayMonth('Month 2', 6000, 3, 'Mansoura 1, Mansoura 2, Tanta')"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Month 2
+                </button>
+                <button onclick="displayMonth('Month 3', 6000, 3, 'Mansoura 1, Mansoura 2, Tanta')"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Month 3
+                </button>
+                <button onclick="displayTotal()"
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    Total Course
+                </button>
+            </div>
+            <div id="canvasOutput" class="mt-4 p-4 bg-white rounded-md shadow-inner text-lg font-semibold text-gray-800 min-h-[100px] flex items-center justify-center">
+                Click a button above to see details.
+            </div>
+            <p class="mt-5 text-gray-600">
+                <span class="tooltip">Hover for more info
+                    <span class="tooltiptext">Clicking a button updates the information below with details for that specific month or the entire course.</span>
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function displayMonth(month, cost, days, locations) {
+            const outputDiv = document.getElementById('canvasOutput');
+            // Remove existing fade-in class to re-trigger animation
+            outputDiv.classList.remove('fade-in');
+            // Force reflow to restart animation
+            void outputDiv.offsetWidth;
+            outputDiv.innerHTML = `
+                <h3 class="text-xl font-bold text-blue-700 mb-2">${month} Details:</h3>
+                <p><strong>Cost:</strong> ${cost} EGP</p>
+                <p><strong>Total Training Days:</strong> ${days} days</p>
+                <p><strong>Locations:</strong> ${locations}</p>
+                <p><strong>Participants:</strong> Senior Management and Junior's Team</p>
+            `;
+            outputDiv.classList.add('fade-in');
+        }
+
+        function displayTotal() {
+            const outputDiv = document.getElementById('canvasOutput');
+            // Remove existing fade-in class to re-trigger animation
+            outputDiv.classList.remove('fade-in');
+            // Force reflow to restart animation
+            void outputDiv.offsetWidth;
+            outputDiv.innerHTML = `
+                <h3 class="text-xl font-bold text-green-700 mb-2">Total Course Summary:</h3>
+                <p><strong>Total Duration:</strong> 3 months</p>
+                <p><strong>Total Sessions:</strong> 9 sessions (3 sessions per branch)</p>
+                <p><strong>Total Training Days:</strong> 9 days (3 days per month across all branches)</p>
+                <p><strong>Total Estimated Cost:</strong> 18,000 EGP</p>
+            `;
+            outputDiv.classList.add('fade-in');
+        }
+    </script>
+
+</body>
+</html>
